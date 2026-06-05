@@ -3,30 +3,30 @@
 // ===== MENU DATA =====
 const menuData = [
   // Breakfast
-  { id: 1,  category: 'breakfast', name: 'Masala Dosa',       description: 'Crispy rice crepe filled with spiced potato masala, served with sambar and three chutneys.',        price: 120, isVeg: true },
-  { id: 2,  category: 'breakfast', name: 'Idli Sambar',        description: 'Soft steamed rice cakes with piping hot sambar and coconut chutney. A timeless classic.',            price: 80,  isVeg: true },
-  { id: 3,  category: 'breakfast', name: 'Ven Pongal',         description: 'Creamy rice and moong dal porridge tempered with ghee, black pepper, cumin, and golden cashews.',    price: 90,  isVeg: true },
-  { id: 4,  category: 'breakfast', name: 'Egg Dosa',           description: 'Crispy golden dosa topped with beaten egg, caramelised onions, and green chillies.',                 price: 140, isVeg: false },
-  { id: 5,  category: 'breakfast', name: 'Uttapam',            description: 'Thick fermented rice pancake topped with onion, tomato, green chilli, and fresh coriander.',         price: 100, isVeg: true },
+  { id: 1,  category: 'breakfast', name: 'Masala Dosa',       description: 'Crispy rice crepe filled with spiced potato masala, served with sambar and three chutneys.',        price: 120, isVeg: true,  image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&h=220&fit=crop&q=80' },
+  { id: 2,  category: 'breakfast', name: 'Idli Sambar',        description: 'Soft steamed rice cakes with piping hot sambar and coconut chutney. A timeless classic.',            price: 80,  isVeg: true,  image: 'https://images.unsplash.com/photo-1630383249896-424e482df921?w=400&h=220&fit=crop&q=80' },
+  { id: 3,  category: 'breakfast', name: 'Ven Pongal',         description: 'Creamy rice and moong dal porridge tempered with ghee, black pepper, cumin, and golden cashews.',    price: 90,  isVeg: true,  image: 'https://images.unsplash.com/photo-1567337710282-00832b415979?w=400&h=220&fit=crop&q=80' },
+  { id: 4,  category: 'breakfast', name: 'Egg Dosa',           description: 'Crispy golden dosa topped with beaten egg, caramelised onions, and green chillies.',                 price: 140, isVeg: false, image: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=220&fit=crop&q=80' },
+  { id: 5,  category: 'breakfast', name: 'Uttapam',            description: 'Thick fermented rice pancake topped with onion, tomato, green chilli, and fresh coriander.',         price: 100, isVeg: true,  image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=220&fit=crop&q=80' },
   // Lunch
-  { id: 6,  category: 'lunch', name: 'Veg Meals',              description: 'Full South Indian thali — rice, sambar, rasam, three vegetables, curd, papad, pickle, and payasam.', price: 199, isVeg: true },
-  { id: 7,  category: 'lunch', name: 'Non-Veg Meals',          description: 'Full thali with chicken or mutton curry, rice, sambar, rasam, and all the accompaniments.',           price: 259, isVeg: false },
-  { id: 8,  category: 'lunch', name: 'Curd Rice',              description: 'Cooling tempered curd rice with pomegranate, mustard seeds, curry leaves, and ginger.',               price: 110, isVeg: true },
-  { id: 9,  category: 'lunch', name: 'Mutton Kuzhambu',        description: 'Slow-cooked tender mutton in a rich, tangy tamarind and freshly ground spice gravy.',                price: 320, isVeg: false },
+  { id: 6,  category: 'lunch', name: 'Veg Meals',              description: 'Full South Indian thali — rice, sambar, rasam, three vegetables, curd, papad, pickle, and payasam.', price: 199, isVeg: true,  image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=220&fit=crop&q=80' },
+  { id: 7,  category: 'lunch', name: 'Non-Veg Meals',          description: 'Full thali with chicken or mutton curry, rice, sambar, rasam, and all the accompaniments.',           price: 259, isVeg: false, image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=220&fit=crop&q=80' },
+  { id: 8,  category: 'lunch', name: 'Curd Rice',              description: 'Cooling tempered curd rice with pomegranate, mustard seeds, curry leaves, and ginger.',               price: 110, isVeg: true,  image: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=220&fit=crop&q=80' },
+  { id: 9,  category: 'lunch', name: 'Mutton Kuzhambu',        description: 'Slow-cooked tender mutton in a rich, tangy tamarind and freshly ground spice gravy.',                price: 320, isVeg: false, image: 'https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=400&h=220&fit=crop&q=80' },
   // Dinner
-  { id: 10, category: 'dinner', name: 'Appam & Stew',          description: 'Lacy fermented rice pancakes with a delicate, fragrant Kerala vegetable coconut stew.',               price: 160, isVeg: true },
-  { id: 11, category: 'dinner', name: 'Chicken Chettinad',     description: 'Bold, aromatic Chettinad spiced chicken curry. Best paired with parotta or steamed rice.',            price: 280, isVeg: false },
-  { id: 12, category: 'dinner', name: 'Kothu Parotta',         description: 'Shredded flaky parotta tossed with egg, onions, tomatoes, and spiced masala on a hot griddle.',      price: 200, isVeg: false },
-  { id: 13, category: 'dinner', name: 'Pesarattu',             description: 'Green moong dal crepe with ginger-green chilli chutney and upma stuffing.',                          price: 130, isVeg: true },
+  { id: 10, category: 'dinner', name: 'Appam & Stew',          description: 'Lacy fermented rice pancakes with a delicate, fragrant Kerala vegetable coconut stew.',               price: 160, isVeg: true,  image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&h=220&fit=crop&q=80' },
+  { id: 11, category: 'dinner', name: 'Chicken Chettinad',     description: 'Bold, aromatic Chettinad spiced chicken curry. Best paired with parotta or steamed rice.',            price: 280, isVeg: false, image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=220&fit=crop&q=80' },
+  { id: 12, category: 'dinner', name: 'Kothu Parotta',         description: 'Shredded flaky parotta tossed with egg, onions, tomatoes, and spiced masala on a hot griddle.',      price: 200, isVeg: false, image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=220&fit=crop&q=80' },
+  { id: 13, category: 'dinner', name: 'Pesarattu',             description: 'Green moong dal crepe with ginger-green chilli chutney and upma stuffing.',                          price: 130, isVeg: true,  image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=220&fit=crop&q=80' },
   // Beverages
-  { id: 14, category: 'beverages', name: 'Filter Coffee',      description: 'Traditional South Indian decoction coffee with frothy full-cream milk, served in a dabara tumbler.',  price: 60,  isVeg: true },
-  { id: 15, category: 'beverages', name: 'Tender Coconut',     description: 'Fresh locally sourced tender coconut — pure, hydrating, and naturally sweet.',                        price: 80,  isVeg: true },
-  { id: 16, category: 'beverages', name: 'Nannari Sherbet',    description: 'Chilled Indian sarsaparilla syrup with lemon, rose water, and basil seeds. A summer classic.',        price: 90,  isVeg: true },
-  { id: 17, category: 'beverages', name: 'Spiced Buttermilk',  description: 'Salted buttermilk churned with curry leaf, ginger, green chilli, and asafoetida.',                   price: 50,  isVeg: true },
+  { id: 14, category: 'beverages', name: 'Filter Coffee',      description: 'Traditional South Indian decoction coffee with frothy full-cream milk, served in a dabara tumbler.',  price: 60,  isVeg: true,  image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=220&fit=crop&q=80' },
+  { id: 15, category: 'beverages', name: 'Tender Coconut',     description: 'Fresh locally sourced tender coconut — pure, hydrating, and naturally sweet.',                        price: 80,  isVeg: true,  image: 'https://images.unsplash.com/photo-1499638673689-79a0b0b91959?w=400&h=220&fit=crop&q=80' },
+  { id: 16, category: 'beverages', name: 'Nannari Sherbet',    description: 'Chilled Indian sarsaparilla syrup with lemon, rose water, and basil seeds. A summer classic.',        price: 90,  isVeg: true,  image: 'https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?w=400&h=220&fit=crop&q=80' },
+  { id: 17, category: 'beverages', name: 'Spiced Buttermilk',  description: 'Salted buttermilk churned with curry leaf, ginger, green chilli, and asafoetida.',                   price: 50,  isVeg: true,  image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=220&fit=crop&q=80' },
   // Desserts
-  { id: 18, category: 'desserts', name: 'Pal Payasam',         description: 'Rich slow-cooked rice kheer with aromatic cardamom, saffron strands, and roasted cashews.',           price: 120, isVeg: true },
-  { id: 19, category: 'desserts', name: 'Kesari',              description: 'Golden semolina halwa with ghee, plump raisins, cashews, and a hint of saffron.',                    price: 90,  isVeg: true },
-  { id: 20, category: 'desserts', name: 'Adhirasam',           description: 'Traditional deep-fried rice flour and jaggery sweets, crispy outside, soft and chewy inside.',       price: 80,  isVeg: true },
+  { id: 18, category: 'desserts', name: 'Pal Payasam',         description: 'Rich slow-cooked rice kheer with aromatic cardamom, saffron strands, and roasted cashews.',           price: 120, isVeg: true,  image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&h=220&fit=crop&q=80' },
+  { id: 19, category: 'desserts', name: 'Kesari',              description: 'Golden semolina halwa with ghee, plump raisins, cashews, and a hint of saffron.',                    price: 90,  isVeg: true,  image: 'https://images.unsplash.com/photo-1605197788864-69e1e9f5c735?w=400&h=220&fit=crop&q=80' },
+  { id: 20, category: 'desserts', name: 'Adhirasam',           description: 'Traditional deep-fried rice flour and jaggery sweets, crispy outside, soft and chewy inside.',       price: 80,  isVeg: true,  image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=220&fit=crop&q=80' },
 ];
 
 // FSSAI standard indicators
@@ -128,6 +128,7 @@ function renderMenu(category, targetGrid) {
 
   targetGrid.innerHTML = filtered.map(item => `
     <article class="menu-card reveal">
+      ${item.image ? `<div class="menu-card-image"><img src="${item.image}" alt="${item.name}" loading="lazy" /></div>` : ''}
       <div class="menu-card-top">
         ${item.isVeg ? vegSVG : nonVegSVG}
         <span style="font-size:0.72rem;color:${item.isVeg ? '#2E7D32' : '#C62828'};font-weight:600;text-transform:uppercase;letter-spacing:1px;">${item.isVeg ? 'Veg' : 'Non-Veg'}</span>

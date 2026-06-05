@@ -379,6 +379,20 @@ ul { list-style: none; }
   box-shadow: var(--shadow-md);
   border-color: transparent;
 }
+.menu-card-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+.menu-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.menu-card:hover .menu-card-image img { transform: scale(1.07); }
+
 .menu-card-top {
   display: flex;
   align-items: center;
